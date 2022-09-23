@@ -1,3 +1,10 @@
+# SomaDataIO 5.3.0.9101
+
+* Global change from `|>` to `%>%` for backward compatibility
+with previous version of R, specifically R-3.6.* (@jmw86069)
+  - future goals may include removing dependency on dplyr package,
+  that effort is directed by (@stufield)
+
 # SomaDataIO 5.3.0
 
 * Upgrades primarily from improvements to SomaLogic internal code base,

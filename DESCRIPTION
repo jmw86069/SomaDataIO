@@ -1,7 +1,7 @@
 Type: Package
 Package: SomaDataIO
 Title: SomaData Input/Output Package
-Version: 5.3.0.9001
+Version: 5.3.0.9101
 Authors@R: 
     c(person(given  = "Stu",
              family = "Field",
@@ -17,7 +17,7 @@ Description: The SomaDataIO package loads the SomaLogic Operating Co., Inc.
 License: MIT + file LICENSE
 URL: www.somalogic.com
 Depends:
-    R (>= 4.1.0)
+    R (>= 3.6.1)
 Imports:
     dplyr (>= 1.0.6),
     lifecycle (>= 1.0.0),
@@ -48,4 +48,4 @@ LazyDataCompression: xz
 LazyLoad: true
 Roxygen: list(markdown = TRUE)
 X-CRAN-COMMENT: Legal disclaimer see file LICENSE.md
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2

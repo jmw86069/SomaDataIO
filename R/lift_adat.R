@@ -96,7 +96,7 @@ lift_adat <- function(adat, anno.tbl) {
   steps    <- attr(adat, "Header.Meta")$HEADER$ProcessSteps
   attr(adat, "Header.Meta")$HEADER$ProcessSteps <- paste0(steps, ", ", new_step)
   ref_vec <- deframe(anno.tbl)
-  scaleAnalytes(adat, ref_vec) |> round(1L)
+  scaleAnalytes(adat, ref_vec) %>% round(1L)
 }
 
 

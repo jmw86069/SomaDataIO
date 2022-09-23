@@ -194,7 +194,7 @@ S3 \code{\link[=median]{median()}} is currently unavailable for the \code{soma_a
 }
 \examples{
 my_adat <- system.file("example", "example_data.adat",
-                       package = "SomaDataIO", mustWork = TRUE) |> read_adat()
+                       package = "SomaDataIO", mustWork = TRUE) \%>\% read_adat()
 # S3 print method
 my_adat
 
@@ -204,8 +204,8 @@ mmps <- c("seq.2579.17", "seq.2788.55", "seq.2789.26", "seq.4925.54")
 summary(my_adat[, mmps])
 
 # Summarize by group
-my_adat[, mmps] |>
-  split(my_adat$Sex) |>
+my_adat[, mmps] \%>\%
+  split(my_adat$Sex) \%>\%
   lapply(summary)
 
 # Alternatively pass annotations with Target info
